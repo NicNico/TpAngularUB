@@ -28,9 +28,10 @@
 		
 			<form id="FormIngreso">
 
-				<input type="text"  placeholder="Ingrese Precio" ng-model="datos.precioUno" id="PrecioUno">
-				<input type="text"  placeholder="Ingrese Precio" ng-model="datos.precioDos" id="precioDos">
-				<input type="text"  placeholder="Ingrese Precio" ng-model="datos.PrecioTres"id="PrecioTres">
+
+    			<input type="text"  placeholder="Ingrese Precio Uno" ng-model="datos.precioUno" id="precioUno">
+    			<input type="text"  placeholder="Ingrese Precio Dos" ng-model="datos.precioDos" id="precioDos">
+				<input type="text"  placeholder="Ingrese Precio Tres" ng-model="datos.precioTres"id="precioTres">
 				<br>
 				
 			</form>
@@ -39,9 +40,9 @@
 		<div class="CajaUno animated bounceInLeft">
 			
 			
-			<button  class="MiBotonUTN" ng-click="sumar(PrecioUno,precioDos, PrecioTres)" >Sumar</button>
-			<button  class="MiBotonUTN" ng-click="promedio()" >Promedio</button>
-			<button  class="MiBotonUTN" ng-click="precioFinal()" >Precio Final</button>
+			<button  class="MiBotonUTN" ng-click="sumar(datos.precioUno,datos.precioDos, datos.precioTres)" >Sumar</button>
+			<button  class="MiBotonUTN" ng-click="promedio(datos.precioUno,datos.precioDos, datos.precioTres)" >Promedio</button>
+			<button  class="MiBotonUTN" ng-click="precioFinal(datos.precioUno,datos.precioDos, datos.precioTres)" >Precio Final</button>
 
 		</div>
 
