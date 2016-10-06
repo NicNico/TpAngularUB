@@ -20,28 +20,32 @@
 		
 
 		</head>
-	<body>
+	<body ng-app="Iuminacion" ng-controller="ctrlIluminacion">
 		<div class="CajaUno animated bounceInDown">
 			
 		
 			<form id="FormIngreso">
 
-				<input type="text"  placeholder="Cantidad de lámparas" id="Cantidad">
-				<SELECT id="Marca">
+				<input type="text"  placeholder="Cantidad de lámparas" id="Cantidad" ng-model="datos.cantidadDeLamparas">
+				<SELECT id="Marca" ng-model="datos.marcaDeLampara">
 					<OPTION >ArgentinaLuz</OPTION>
 					<OPTION >FelipeLamparas</OPTION>
 					<OPTION >JeLuz</OPTION>
 					<OPTION >HazIluminacion</OPTION>
 					<OPTION >Osram</OPTION>
 				</SELECT>
-					<input type="text" readonly placeholder="Precio con descuento" id="precioDescuento">
+					<input type="text" readonly placeholder="Precio con descuento" id="precioDescuento" ng-model="datos.precioFinal">
 			</form>
-			
+
+			{{datos.cantidadDeLamparas}}
+			<br>
+			{{datos.marcaDeLampara}}
+
 		</div>
 		<div class="CajaUno animated bounceInLeft">
 			
 			
-			<button  class="MiBotonUTN" onclick="CalcularPrecio()" >Calcular precio</button>
+			<button  class="MiBotonUTN" ng-click="CalcularPrecio()" >Calcular precio</button>
 			
 
 		</div>
