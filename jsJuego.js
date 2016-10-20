@@ -7,11 +7,19 @@ $scope.datos={}; //creo el objeto datos
 $scope.datos.numerosecreto=Math.floor((Math.random() * 100) + 1);
 $scope.datos.numero=0;
 $scope.datos.contador=0;
+$scope.datos.nombre="NN";
+$scope.datos.fecha="";
+
 	$scope.jugar=function(){
 
 
 		if($scope.datos.numero == $scope.datos.numerosecreto) 
 		{
+            //firebase.database().ref("Adivina/").push({nombre:"NN",numero:"33", intentos:"5"});
+            $scope.datos.fecha= new Date().toString();            
+            firebase.database().ref("Adivina/").push({nombre:$scope.datos.nombre,numero:$scope.datos.numerosecreto, intentos:$scope.datos.contador, fecha:$scope.datos.fecha});
+            
+            
 			switch ($scope.datos.contador) 
 			{
     			case 0: 

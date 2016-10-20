@@ -14,9 +14,9 @@ $scope.MostrarFranjaEdad=function()
     }
     else
     { 
-        if ($scope.datos.Edad > 18)
+        if ($scope.datos.Edad >= 18)
         {
-            alert("< 18, Mayor");
+            alert("18 ó > 18, Mayor");
         }
         else
         {
