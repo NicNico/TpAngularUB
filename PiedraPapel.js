@@ -46,7 +46,7 @@ console.info($scope.datos);
 			}
 		}
 		firebase.database().ref("PiedraPapel/").push($scope.datos);
-		
+		window.location = "index.html";
 
 
 	};//piedra=function()
@@ -73,6 +73,7 @@ console.info($scope.datos);
 			break;							
 		};
 		firebase.database().ref("PiedraPapel/").push($scope.datos);
+		window.location = "index.html";
 
 
 	};	//papel=function()
@@ -98,6 +99,7 @@ console.info($scope.datos);
 			break;							
 		};
 		firebase.database().ref("PiedraPapel/").push($scope.datos);
+		window.location = "index.html";
 
 	};	//	tijera=function()
 });
