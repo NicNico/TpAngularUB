@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Programación AngularJS</title>
+
+		<!--Estilos-->
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<link rel="stylesheet" type="text/css" href="animacion.css">
+		<!--final de Estilos-->
+
+
+
+		<script src="https://www.gstatic.com/firebasejs/3.5.1/firebase.js"></script>
+		<script>
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyAM20XONC6w_QJlxUVisASWzQ2uuutMhTE",
+		    authDomain: "zonadejuejos.firebaseapp.com",
+		    databaseURL: "https://zonadejuejos.firebaseio.com",
+		    storageBucket: "zonadejuejos.appspot.com",
+		    messagingSenderId: "48790462440"
+		  };
+		  firebase.initializeApp(config);
+		</script>
+
+
+		<!--AngularJS-->
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<!--AngularJS-->
+		
+
+
+		<!--Lógica-Programación-->
+		<script type="text/javascript" src="jsJuego.js"></script>
+        <!--Final de Lógica-Programación -->
+		
+
+		</head>
+	<body ng-app="Juego" ng-controller="controlJuego">
+		<div class="CajaUno animated bounceInDown">
+			
+		
+			<form id="FormIngreso">
+
+				<input type="text"  placeholder="Ingrese número" ng-model="datos.numero"id="numero">
+				<input type="text"  placeholder="Ingrese Nombre" ng-model="datos.nombre"id="nombre">				
+				<br>
+				
+			</form>
+			
+		</div>
+		<div class="CajaUno animated bounceInLeft">
+			
+			<button  class="MiBotonUTN" ng-click="jugar()" >Jugar</button>
+
+		</div>
+
+		<div class="CajaEnunciado animated bounceInLeft">
+			<h2>Enunciado:</h2>
+			
+	
+				<h3>
+					debe adivinar el numero
+				</h3>
+			
+		</div>
+
+		<div class="CajaAbajo animated bounceInUp">
+			<a  class="MiBotonUTNLinea" onclick="location.href='index.html'" >Men&uacute; ejercicios</a>	
+		</div>
+	</body>
+</html>

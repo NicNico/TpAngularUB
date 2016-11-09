@@ -8,8 +8,8 @@
 		<link rel="stylesheet" type="text/css" href="estilo.css">
 		<link rel="stylesheet" type="text/css" href="animacion.css">
 		<!--final de Estilos-->
+
 		<script src="https://www.gstatic.com/firebasejs/3.5.1/firebase.js"></script>
-		
 		<script>
 		  // Initialize Firebase
 		  var config = {
@@ -22,26 +22,27 @@
 		  firebase.initializeApp(config);
 		</script>
 
-		<script src="angular.min.js"></script>
+		<!--AngularJS-->
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<!--AngularJS-->
+
+
 		<!--Lógica-Programación-->
 		<script type="text/javascript" src="Agilidad.js"></script>
         <!--Final de Lógica-Programación -->
-		
+	</head>
 
-		</head>
 	<body ng-app="Agilidad" ng-controller="controlAgilidad">
+		
 		<div class="CajaUno animated bounceInDown">
 			
 		
-		
-			<form id="FormIngreso"> 
-			<input type="text"  placeholder="Numero 1" ng-model="datos.Numero1" id="Numero1" readonly>
-			<input type="text"  placeholder="Signo" ng-model="datos.Signo" id="Signo" readonly>
-			<input type="text"  placeholder="Numero 2" ng-model="datos.Numero2" id="Numero 2" readonly>
-			<input type="text"  placeholder="Respuesta" ng-model="datos.Respuesta" id="Respuesta">
-			<button  class="MiBotonUTN" ng-click="Aceptar()" >Aceptar...</button>
+			<form id="FormIngreso">
 				<center>
 					<img src="imagenes/interrogacion.jpg" >
+					<input type="text"  placeholder="Ingrese Numero1" ng-model="datos.Numero1"id="Numero1" readonly>
+					<input type="text"  placeholder="Ingrese Signo" ng-model="datos.Signo"id="Signo" readonly>					
+					<input type="text"  placeholder="Ingrese Numer2" ng-model="datos.Numero2"id="Numero2" readonly>						
 				</center>
 				
 			</form>
@@ -49,6 +50,11 @@
 		</div>
 		<div class="CajaUno animated bounceInLeft">
 			
+
+			
+	
+			
+
 
 		</div>
 
