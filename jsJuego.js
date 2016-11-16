@@ -7,7 +7,7 @@ $scope.datos={}; //creo el objeto datos
 $scope.datos.numerosecreto=Math.floor((Math.random() * 100) + 1);
 $scope.datos.numero=0;
 $scope.datos.contador=0;
-$scope.datos.nombre="NN";
+$scope.datos.nombre="Ingresa tu nombre";
 $scope.datos.fecha="";
 
 	$scope.jugar=function(){

@@ -36,7 +36,7 @@ $scope.Aceptar=function()
             }
             
         setTimeout(function() {
-            window.location = "index.html";
+            window.location = "menu.html";
         }, 3000);
 
         console.info($scope.datos);

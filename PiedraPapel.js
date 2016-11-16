@@ -36,17 +36,17 @@ console.info($scope.datos);
 		{
 			if($scope.datos.eleccion == "papel")
 			{
-				alert("eligio papel, perdio");
-				$scope.datos.resultado="eligio papel, perdio";
+				alert("eligio Piedra, perdio");
+				$scope.datos.resultado="eligio Piedra, perdio";
 			}
 			else
 			{
-				alert("eligio tijera, gano");
-				$scope.datos.resultado="eligio tijera, gano";
+				alert("eligio Piedra, gano");
+				$scope.datos.resultado="eligio Piedra, gano";
 			}
 		}
 		firebase.database().ref("PiedraPapel/").push($scope.datos);
-		window.location = "index.html";
+		window.location = "menu.html";
 
 
 	};//piedra=function()
@@ -68,12 +68,12 @@ console.info($scope.datos);
 			break;				
 
 			case  "tijera":
-		    alert("eligio papel, gano");
-			$scope.datos.resultado="eligio papel, gano";
+		    alert("eligio papel,perdio");
+			$scope.datos.resultado="eligio papel, perdio";
 			break;							
 		};
 		firebase.database().ref("PiedraPapel/").push($scope.datos);
-		window.location = "index.html";
+		window.location = "menu.html";
 
 
 	};	//papel=function()
@@ -99,7 +99,7 @@ console.info($scope.datos);
 			break;							
 		};
 		firebase.database().ref("PiedraPapel/").push($scope.datos);
-		window.location = "index.html";
+		window.location = "menu.html";
 
 	};	//	tijera=function()
 });
