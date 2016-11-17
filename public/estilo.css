@@ -231,12 +231,12 @@ position: absolute;
  
   border:hidden;
   width:150px;
-  background:red;
+  background:#1abc9c;
   margin-top:1%;
   padding:6px;
   text-align:center;
   text-decoration:none;
-  color:#fff;
+  color:#1abc9c
   cursor:pointer;
   -moz-border-radius:7px;
   -webkit-border-radius:7px;
