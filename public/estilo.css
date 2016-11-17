@@ -8,7 +8,7 @@
 body {
   margin: 0 auto;
   color:#f0f0f0;
-  background:#3f51b5;
+  background:#1abc9c;
   font-family:'Open Sans',sans-serif;
 }
 
@@ -41,7 +41,7 @@ caption {
   max-width: 30%;
   border: dashed;
  position: fixed;
-background: royalblue;
+background: #1abc9c;
 top: 0px;
 width: 400px;
 margin: 0;
@@ -92,7 +92,7 @@ input[type="text"]{
   padding:4%;
   font-family:'Open Sans',sans-serif;
   font-size:95%;
-  color:#555;
+  color:g#555__;
 }
 select{
   width:100%;
